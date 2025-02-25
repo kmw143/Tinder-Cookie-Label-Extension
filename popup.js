@@ -1,16 +1,27 @@
 console.log("This is a popup!")
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Prevent the card from flipping when clicking on the link
+    // Existing link click handlers...
     document.querySelectorAll(".link").forEach(link => {
         link.addEventListener("click", function (event) {
-            event.stopPropagation(); // Stop event from bubbling to .card
-            console.log("You clicked a link!");
-            // Add code here to show your hidden div
+            event.stopPropagation(); // Prevent card flip
+            const targetId = this.getAttribute("data-target"); // Get target ID
+            const hiddenDiv = document.getElementById(targetId);
+            
+            // Toggle visibility of the hidden div
+            hiddenDiv.style.display = hiddenDiv.style.display === "block" ? "none" : "block";
         });
     });
 
-    // Flip card when clicking anywhere else
+    // Add close button functionality
+    document.querySelectorAll(".close-button").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevent card flip
+            this.closest('.hidden-div').style.display = "none"; // Hide the div
+        });
+    });
+
+    // Existing card click handlers...
     document.querySelectorAll(".card").forEach(card => {
         card.addEventListener("click", function () {
             this.classList.toggle("flipped");

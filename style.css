@@ -254,3 +254,57 @@ p {
 .card.flipped .card-front::after {
     opacity: 0;
 }
+
+/* Third party providers info */
+
+.hidden-div {
+    position: fixed; /* Fixed positioning to center it on the screen */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to center */
+    width: 300px; /* Set the desired width */
+    height: auto;
+    background-color: rgb(243, 154, 243); /* Background color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow content */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.hidden-div-content {
+    padding: 20px; /* Padding inside the hidden div */
+    display: flex; /* Enable Flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: auto; /* Full height of the hidden div */
+}
+
+.close-button {
+    position: absolute; /* Position the button in the corner */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove default border */
+    font-size: 18px; /* Font size for the button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.hyperlink-list {
+    background-color: rgba(255, 255, 255, 0.54); /* White background for content with transparency */
+    border-radius: 10px; /* Rounded corners */
+    width: 80%;
+    list-style-type: none; /* Remove default list styles */
+    padding: 10px; /* Remove padding */
+    margin: 10px 0 0; /* Margin for spacing */
+}
+
+.hyperlink-list a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.hyperlink-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
