@@ -53,6 +53,43 @@ h1 {
     position: relative;
 }
 
+.notification-badge {
+    position: absolute; /* Position relative to the card */
+    top: -10px; /* Distance from the top */
+    right: -10px; /* Distance from the right */
+    background-color: red; /* Badge color */
+    color: white; /* Text color */
+    border-radius: 50%; /* Make it circular */
+    width: 25px; /* Width of the badge */
+    height: 25px; /* Height of the badge */
+    display: flex; /* Center the number */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 16px; /* Font size for the number */
+}
+
+/* Tooltip styling */
+.tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: 120px; /* Adjust width as needed */
+    background-color: black; /* Tooltip background color */
+    color: white; /* Tooltip text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the tooltip */
+    position: absolute; /* Positioning */
+    top: -30px; /* Position above the badge */
+    right: -10px; /* Adjust to position next to the badge */
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+/* Show tooltip on hover */
+.notification-badge:hover .tooltip {
+    visibility: visible; /* Show tooltip */
+    opacity: 1; /* Make it visible */
+}
+
 /* Flip effect */
 .card-inner {
     width: 100%;
@@ -89,8 +126,10 @@ h1 {
 
 /* Content styling */
 .card-icon {
-    margin-left: 10px;
-    margin-right: 5px;
+    width: 70px;
+    margin-left: 5px;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Image styling */
@@ -102,10 +141,13 @@ h1 {
 /* Label styling */
 .label {
     font-size: 14px; /* Smaller font size for label */
-    text-align: center; /* Center the label text */
+    /* text-align: center; */
 }
 
 .category-description {
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center;
     margin-left: 5px;
     margin-right: 10px;
     width: 280px;
@@ -115,8 +157,16 @@ h1 {
 }
 
 .front-description-text {
-    margin: 5px;
-    font-size: 10px;
+    width: 260px;
+    padding-left: 5px;
+    font-size: 11px;
+    text-align: left;
+}
+
+.duration-icon {
+    margin-right: 5px;
+    width: 11px;
+    height: 11px;
 }
 
 /* Back styling */
