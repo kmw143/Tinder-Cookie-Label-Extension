@@ -15,7 +15,7 @@
         <p class="description">Internet cookies are small pieces of data stored on your browser by the website to track, personalize, and save data about your browsing experience.</p>
 
         <div class="flashcards">
-            <div class="card">
+
             <div class="card" id="Functional">
                 <div class="card-inner">
                     <div class="card-front">
@@ -32,7 +32,7 @@
                                 <img src="tinder.png" class="duration-icon" />
                                 Persistent <br>
                                 Active cookies: 12 <br>
-                                Includes <span class="link" style="text-decoration: underline;">first</span> and <span class="link" style="text-decoration: underline;">third</span>-party cookies
+                                Includes first and <span class="link" data-target="functional-third-info" style="text-decoration: underline;">third</span>-party cookies
                             </div>
                         </div>
                     </div>
@@ -59,9 +59,10 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+            
             </div>
+
             <div class="card" id="Analytics">
                 <div class="card-inner">
                     <div class="card-front">
@@ -78,7 +79,7 @@
                                 <img src="tinder.png" class="duration-icon" />
                                 2 years<br>
                                 Active Cookies: 5 <br>
-                                Includes <span style="text-decoration: underline;">first</span> and <span style="text-decoration: underline;">third</span>-party cookies
+                                Includes first and <span class="link" data-target="analytics-third-info" style="text-decoration: underline;">third</span>-party cookies
                             </div>
                         </div>
                     </div>
@@ -103,6 +104,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="card" id="Preferences">
                 <div class="card-inner">
                     <div class="card-front">
@@ -119,7 +122,7 @@
                                 <img src="tinder.png" class="duration-icon" />
                                 1 week<br>
                                 Active Cookies: 1 <br>
-                                Includes <span style="text-decoration: underline;">first</span>-party cookies
+                                Includes <span class="link" data-target="preferences-first-info" style="text-decoration: underline;">first</span>-party cookies
                             </div>
                         </div>
                     </div>
@@ -141,6 +144,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="card" id="Marketing">
                 <div class="card-inner">
                     <div class="card-front">
@@ -157,7 +162,7 @@
                                 <img src="tinder.png" class="duration-icon" />
                                 2 years<br>
                                 Active Cookies: 12 <br>
-                                Includes <span style="text-decoration: underline;">first</span> and <span style="text-decoration: underline;">third</span>-party cookies
+                                Includes first and <span class="link" data-target="marketing-third-info" style="text-decoration: underline;">third</span>-party cookies
                             </div>
                         </div>
                     </div>
@@ -183,6 +188,61 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Hidden divs, third party provider pop-up -->
+        <div id="functional-third-info" class="hidden-div" style="display: none;">
+            <div class="hidden-div-content">
+                <button class="close-button">X</button>
+                <h2>Third-Party Cookie Providers</h2>
+                <ul class="hyperlink-list">
+                    <li><a href="https://docs.bugsnag.com/legal/privacy-policy/" target="_blank">BugSnag</a></li>
+                    <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google</a></li>
+                    <li><a href="https://www.adyen.com/policies-and-disclaimer/privacy-policy" target="_blank">Adyen</a></li>
+                    <li><a href="https://aws.amazon.com/privacy/" target="_blank">AWS</a></li>
+                    <li><a href="https://www.facebook.com/policy.php" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.vonage.com/legal/privacy-policy/?icmp=footer_legalpolicy_privacy" target="_blank">Vonage</a></li>
+                    <li><a href="https://arkoselabs.atlassian.net/wiki/spaces/LEG/pages/1146946/Privacy+Policy" target="_blank">Arkose</a></li>
+                    <li><a href="https://dev.facetec.com/privacy-site" target="_blank">Facetec</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="analytics-third-info" class="hidden-div" style="display: none;">
+            <div class="hidden-div-content">
+                <button class="close-button">X</button>
+                <h2>Third-Party Cookie Providers</h2>
+                <ul class="hyperlink-list">
+                    <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google Analytics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="preferences-first-info" class="hidden-div" style="display: none;">
+            <div class="hidden-div-content">
+                <button class="close-button">X</button>
+                <h2>First-Party Cookie Providers</h2>
+                <ul class="hyperlink-list">
+                    <li><a href="https://policies.tinder.com/privacy/intl/en" target="_blank">Tinder</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="marketing-third-info" class="hidden-div" style="display: none;">
+            <div class="hidden-div-content">
+                <button class="close-button">X</button>
+                <h2>Third-Party Cookie Providers</h2>
+                <ul class="hyperlink-list">
+                    <li><a href="https://www.appsflyer.com/privacy-policy/" target="_blank">AppsFlyer</a></li>
+                    <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">GTAG YouTube Tracking</a></li>
+                    <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Floodlight</a></li>
+                    <li><a href="https://marketcast.com/privacy-policy/" target="_blank">Marketcast</a></li>
+                    <li><a href="https://www.facebook.com/legal/technology_terms" target="_blank">Meta/Facebook</a></li>
+                    <li><a href="https://values.snap.com/privacy/privacy-policy" target="_blank">Snapchat</a></li>
+                    <li><a href="https://www.tiktok.com/legal/page/us/privacy-policy/en" target="_blank">TikTok</a></li>
+                    <li><a href="https://policy.pinterest.com/en/privacy-policy" target="_blank">Pinterest</a></li>
+                </ul>
             </div>
         </div>
     </div>
