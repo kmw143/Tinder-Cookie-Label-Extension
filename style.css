@@ -4,6 +4,7 @@ body {
     padding: 0;
     display: grid; /* Use CSS Grid for centering */
     place-items: center; /* Center both horizontally and vertically */
+    line-height: 1.5;
 }
 
 .title-container {
@@ -56,16 +57,16 @@ h1 {
 .notification-badge {
     position: absolute; /* Position relative to the card */
     top: -10px; /* Distance from the top */
-    right: -10px; /* Distance from the right */
+    right: -5px; /* Distance from the right */
     background-color: red; /* Badge color */
     color: white; /* Text color */
-    border-radius: 50%; /* Make it circular */
-    width: 25px; /* Width of the badge */
-    height: 25px; /* Height of the badge */
+    border-radius: 8px; /* Make it circular */
+    height: 12px; /* Height of the badge */
     display: flex; /* Center the number */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    font-size: 16px; /* Font size for the number */
+    font-size: 10px; /* Font size for the number */
+    padding: 5px;
 }
 
 /* Tooltip styling */
@@ -113,7 +114,6 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc; /* Sharp corners */
 }
@@ -159,8 +159,13 @@ h1 {
 .front-description-text {
     width: 260px;
     padding-left: 5px;
-    font-size: 11px;
+    font-size: 10px;
     text-align: left;
+}
+
+.use-text {
+    font-size: 12px; /* Adjust the size as needed */
+    /* font-weight: bold; */
 }
 
 .duration-icon {
@@ -174,7 +179,51 @@ h1 {
     background-color: #2ecc71;
     color: white;
     transform: rotateY(180deg);
+    font-size: 10px;
 }
+
+.flex-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: flex-start; /* Space between the columns */
+    height: 80%;
+}
+
+.uses-section,
+.providers-section {
+    width: 160px;
+    flex: 1; /* Allow both sections to grow equally */
+    border-radius: 5px; /* Rounded corners for the sections */
+    background-color: #ffffff54; /* Background color for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: left; /* Left-align the text */
+    padding-left: 10px;
+    display: flex; /* Enable Flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+}
+
+.purposes-icon,
+.third-party-icon {
+    width: 11px;
+    height: 11px;
+    align-self: center;
+}
+
+.providers-section {
+    margin-left: 10px; /* Remove margin for the last column */
+}
+
+p {
+    line-height: 1.5; /* Adjust this value to decrease line spacing */
+    margin: 0; /* Remove default margin */
+}
+
+.uses {
+    list-style-type: disc; /* Bullet points for the list */
+    margin: 0; /* Remove default margin from the list */
+    padding: 10px; /* Set padding for the list items */
+}
+
 
 /* Folded corner effect */
 .card-front::after {
