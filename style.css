@@ -49,9 +49,20 @@ h1 {
 /* Flashcard styling */
 .card {
     width: 100%;
-    height: 100px; /* Rectangular shape */
     perspective: 1000px;
     position: relative;
+}
+
+#Functional, #Marketing {
+    height: 150px;
+}
+
+#Analytics {
+    height: 120px;
+}
+
+#Preferences {
+    height: 100px;
 }
 
 .notification-badge {
@@ -89,7 +100,7 @@ h1 {
 .notification-badge:hover .tooltip {
     visibility: visible; /* Show tooltip */
     opacity: 1; /* Make it visible */
-}
+} 
 
 /* Flip effect */
 .card-inner {
@@ -152,7 +163,7 @@ h1 {
     margin-left: 5px;
     margin-right: 10px;
     width: 280px;
-    height: 70px;
+    height: 80px;
     background-color: #f8f8f854;
     border-radius: 5px;
 }
@@ -186,11 +197,11 @@ h1 {
 .flex-container {
     display: flex; /* Enable Flexbox */
     justify-content: flex-start; /* Space between the columns */
-    height: 80%;
+    height: 90%;
 }
 
 .uses-section,
-.providers-section {
+.data-section {
     width: 160px;
     flex: 1; /* Allow both sections to grow equally */
     border-radius: 5px; /* Rounded corners for the sections */
@@ -210,7 +221,7 @@ h1 {
     align-self: center;
 }
 
-.providers-section {
+.data-section {
     margin-left: 10px; /* Remove margin for the last column */
 }
 
@@ -219,7 +230,7 @@ p {
     margin: 0; /* Remove default margin */
 }
 
-.uses {
+.uses, .data {
     list-style-type: disc; /* Bullet points for the list */
     margin: 0; /* Remove default margin from the list */
     padding: 10px; /* Set padding for the list items */

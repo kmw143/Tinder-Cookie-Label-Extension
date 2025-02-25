@@ -16,6 +16,7 @@
 
         <div class="flashcards">
             <div class="card">
+            <div class="card" id="Functional">
                 <div class="card-inner">
                     <div class="card-front">
                         <!-- <div class="notification-badge">First + Third-Party Cookies
@@ -31,7 +32,7 @@
                                 <img src="tinder.png" class="duration-icon" />
                                 Persistent <br>
                                 Active cookies: 12 <br>
-                                Includes <span style="text-decoration: underline;">first</span> and <span style="text-decoration: underline;">third</span>-party cookies
+                                Includes <span class="link" style="text-decoration: underline;">first</span> and <span class="link" style="text-decoration: underline;">third</span>-party cookies
                             </div>
                         </div>
                     </div>
@@ -45,16 +46,23 @@
                                     <li>Login/authentication: 6</li>
                                 </ul>
                             </div>
-                            <div class="providers-section">
+                            <div class="data-section">
                                 <img src="tinder.png" class="third-party-icon" />
-                                <p>Google, Facebook, Vonage, Arkose, Facetec</p>
+                                <ul class="data">
+                                    <li>Site function</li>
+                                    <li>Location</li>
+                                    <li>Financial security</li>
+                                    <li>Authentication</li>
+                                    <li>Video chat session data</li>
+                                    <li>Biometric data</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="Analytics">
                 <div class="card-inner">
                     <div class="card-front">
                         <!-- <div class="notification-badge">5
@@ -82,15 +90,20 @@
                                     <li>User engagement analytics: 5</li>
                                 </ul>
                             </div>
-                            <div class="providers-section">
+                            <div class="data-section">
                                 <img src="tinder.png" class="third-party-icon" />
-                                <p>Google Analytics</p>
+                                <ul class="data">
+                                    <li>User/session identifiers</li>
+                                    <li>Authentication</li>
+                                    <li>Account and profile info</li>
+                                    <li>Usage data</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="Preferences">
                 <div class="card-inner">
                     <div class="card-front">
                         <!-- <div class="notification-badge">1
@@ -118,15 +131,17 @@
                                     <li>Language preferences: 1</li>
                                 </ul>
                             </div>
-                            <div class="providers-section">
+                            <div class="data-section">
                                 <img src="tinder.png" class="third-party-icon" />
-                                <p>None</p>
+                                <ul class="data">
+                                    <li>Language</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="Marketing">
                 <div class="card-inner">
                     <div class="card-front">
                         <!-- <div class="notification-badge">12
@@ -154,9 +169,16 @@
                                     <li>Measure performance of marketing campaigns: 12</li>
                                 </ul>
                             </div>
-                            <div class="providers-section">
+                            <div class="data-section">
                                 <img src="tinder.png" class="third-party-icon" />
-                                <p>AppsFlyer, GTAG (YouTube tracking), Floodlight, Marketcast, Meta/Facebook, Snapchat, TikTok, Pinterest</p>
+                                <ul class="data">
+                                    <li>Site function</li>
+                                    <li>User/session identifiers</li>
+                                    <li>Device and network info</li>
+                                    <li>User identification data</li>
+                                    <li>Conversion data</li>
+                                    <li>Ad interaction data</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -164,7 +186,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="popup.js"></script>
 </body>
