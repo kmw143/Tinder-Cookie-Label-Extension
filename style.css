@@ -100,7 +100,7 @@ h1 {
     transition: transform 0.5s;
 }
 
-.card:hover .card-inner {
+.card.flipped .card-inner {
     transform: rotateY(-180deg);
 }
 
@@ -141,6 +141,7 @@ h1 {
 /* Label styling */
 .label {
     font-size: 14px; /* Smaller font size for label */
+    font-weight: bold;
     /* text-align: center; */
 }
 
@@ -238,7 +239,7 @@ p {
     transform: rotate(90deg);
 }
 
-/* Increase visibility on hover */
-.card:hover .card-front::after {
+/* Increase visibility on click */
+.card.flipped .card-front::after {
     opacity: 0;
 }
