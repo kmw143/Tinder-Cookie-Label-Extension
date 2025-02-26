@@ -285,7 +285,7 @@ p {
     transform: translate(-50%, -50%); /* Offset to center */
     width: 300px; /* Set the desired width */
     height: auto;
-    background-color: rgb(243, 154, 243); /* Background color with transparency */
+    background-color: #56a5f0; /* Background color with transparency */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     overflow: hidden; /* Hide overflow content */
