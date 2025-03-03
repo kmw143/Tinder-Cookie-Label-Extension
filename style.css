@@ -73,6 +73,10 @@ h1 {
     height: 100px;
 }
 
+#Unknown {
+    height: 100px;
+}
+
 .notification-badge {
     position: absolute; /* Position relative to the card */
     top: -10px; /* Distance from the top */
